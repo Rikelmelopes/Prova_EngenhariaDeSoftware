@@ -29,8 +29,6 @@ function listar() {
   });
 }
 listar();
-<<<<<<< HEAD
-=======
 
 const listar_por_categoria = (categoria) => {
   for (let i = 0; i < produtos.length; i++) {
@@ -41,4 +39,3 @@ const listar_por_categoria = (categoria) => {
 };
 
 listar_por_categoria("Eletrônico");
->>>>>>> bb7a5e6 ([finishes #183940195] Listar por categoria)
