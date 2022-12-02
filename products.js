@@ -29,15 +29,3 @@ function listar() {
   });
 }
 listar();
-
-const listar_por_categoria = (categoria) => {
-  for (let i = 0; i < produtos.length; i++) {
-    if (categoria == produtos[i].categoria) {
-      console.log(produtos[i]);
-    } else if (categoria !== produtos[i].categoria) {
-      console.log("Não encontrado");
-    }
-  }
-};
-
-listar_por_categoria("Eletrônico");
