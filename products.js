@@ -29,16 +29,28 @@ function listar() {
   });
 }
 listar();
-<<<<<<< HEAD
-=======
 
 const listar_por_categoria = (categoria) => {
   for (let i = 0; i < produtos.length; i++) {
     if (categoria == produtos[i].categoria) {
       console.log(produtos[i]);
+    } else if (categoria !== produtos[i].categoria) {
+      console.log("Não encontrado");
     }
   }
 };
 
 listar_por_categoria("Eletrônico");
->>>>>>> bb7a5e6 ([finishes #183940195] Listar por categoria)
+
+const listar_por_valor = (valor_minimo, valor_maximo) => {
+  for (let i = 0; i < produtos.length; i++) {
+    if (
+      produtos[i].valor >= valor_minimo &&
+      produtos[i].valor <= valor_maximo
+    ) {
+      console.log(produtos[i]);
+    }
+  }
+};
+
+listar_por_valor(5, 10);
